@@ -1,0 +1,8 @@
+service:
+  type: LoadBalancer
+  externalPort: 80
+
+# account:
+# The values can be set to define the current and the (new) custom admin passwords at the startup (the username will remain "admin")
+#   adminPassword: admin
+#   currentAdminPassword: admin

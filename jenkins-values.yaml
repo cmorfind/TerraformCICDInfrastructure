@@ -1,0 +1,18 @@
+controller:
+  servicePort: 80
+  # For minikube, set this to NodePort, elsewhere use LoadBalancer
+  # Use ClusterIP if your setup includes ingress controller
+  serviceType: LoadBalancer
+
+ # List of plugins to be install during Jenkins controller start
+  installPlugins:
+    - kubernetes:4186.v1d804571d5d4
+    - workflow-aggregator:596.v8c21c963d92d
+    - git:5.2.1
+    - configuration-as-code:1775.v810dc950b_514
+    - remote-file:1.24
+    - pipeline-stage-view:2.34
+    - sonar:2.17.1
+    - multibranch-scan-webhook-trigger:1.0.11
+    - bitbucket-push-and-pull-request:3.0.2
+    - cloudbees-bitbucket-branch-source:871.v28d74e8b_4226
